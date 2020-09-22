@@ -16,7 +16,7 @@ usuarioRoute.get(
 
 
 usuarioRoute.get(
-    '/',
+    '/', 
     authMiddleware.autorizarUsuarioByToken,
     usuarioController.listar
 );

@@ -15,7 +15,7 @@ class MensagemService {
     }
 
     public retornaMensagensOrdenadas(usuarioMensagem: MensagemUsuario[]): MensagemUsuario[] {
-        return usuarioMensagem.sort((a, b) => {
+        return usuarioMensagem.sort((a, b) => {  
             return (a.dataUltimaMensagem ? 0 : 1) - (b.dataUltimaMensagem ? 0 : 1) // VERIFICANDO PRA VER SE O USUARIO TEM MENSAGEM
                 || -(a.dataUltimaMensagem > b.dataUltimaMensagem) // // FAZENDO AS COMPARAÇÕES DAS DATAS AS ÚLTIMA VEM EM PRIMEIRO
                 || +(a.dataUltimaMensagem < b.dataUltimaMensagem)

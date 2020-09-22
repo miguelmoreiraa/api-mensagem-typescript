@@ -30,7 +30,7 @@ class MensagemController {
                 isRemetente: mensagem.remetente == String(idUsuarioLogado)
             }
         });
-
+ 
         return res.json(mensagensChat);
     }
 
